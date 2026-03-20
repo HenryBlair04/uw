@@ -1,0 +1,1 @@
+(function(){  let e = document.elementFromPoint(window.innerWidth/2, window.innerHeight/2);  let url = e?.src || getComputedStyle(e).backgroundImage?.match(/url\("?(.+?)"?\)/)?.[1];  if (url) window.open(url, %27_blank%27);  else alert("No image found.");})();
